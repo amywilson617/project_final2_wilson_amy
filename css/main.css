@@ -26,3 +26,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     font-family:"Sports";
     src: url('fonts/sportsjersey.ttf')
 }
+
+/* BEGIN MAIN FORMATTING */
+.container{
+	background-color: #ddb957;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+h1 {
+	background-color: #bd532b;
+}
+
+.logo{
+	display: block;
+	width: 50%;
+	max-width: 300px;
+	margin: auto;
+}
