@@ -13,21 +13,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 @font-face{
-    font-family: "Johnny";
-    src: url('fonts/johnny fever.ttf');
-}
-
-@font-face{
-    font-family: "Krinkes";
-    src: url('fonts/KrinkesDecorPERSONAL.ttf');
-}
-
-@font-face{
     font-family:"Sports";
     src: url('fonts/sportsjersey.ttf')
 }
 
 /* BEGIN MAIN FORMATTING */
+
 .container{
 	background-color: #ddb957;
 	width: 100%;
@@ -35,7 +26,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	margin: auto;
 }
 
-h1 {
+/* HEADER*/
+
+header {
 	background-color: #bd532b;
 }
 
@@ -44,4 +37,36 @@ h1 {
 	width: 50%;
 	max-width: 300px;
 	margin: auto;
+}
+
+/* TEXT CONTENT */
+.text{
+	margin-top: 0;
+	margin: 3%;
+	background-color: #d9d9d9;
+	padding: 2%;
+}
+
+h2{
+	font-family: "Lobster";
+	color: #bd532b;
+	font-size: 3em;
+}
+
+h3{
+	font-family: "Armata";
+	color: #bd532b;
+	font-size: 2em;
+}
+
+h4{
+	font-family: "Armata";
+	color: #6b759b;
+	font-size: 1.2em;
+}
+
+.copy{
+	font-family: "Space Mono", monospace;
+	color: dark-grey;
+	font-size: .9em;
 }
