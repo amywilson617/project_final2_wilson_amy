@@ -1,0 +1,28 @@
+element.style{
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+@font-face{
+    font-family: "Johnny";
+    src: url('fonts/johnny fever.ttf');
+}
+
+@font-face{
+    font-family: "Krinkes";
+    src: url('fonts/KrinkesDecorPERSONAL.ttf');
+}
+
+@font-face{
+    font-family:"Sports";
+    src: url('fonts/sportsjersey.ttf')
+}
