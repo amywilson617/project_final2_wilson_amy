@@ -138,6 +138,7 @@ div[class*=box] {
 	border: 1px solid #bd532b;
 	background-color: #ddb957;
 }
+
 .btn-two::after {
 	content: '';
 	position: absolute;
@@ -150,6 +151,7 @@ div[class*=box] {
 	border: 1px solid #6b759b;
 	background-color: rgba(255,255,255,0.1);
 }
+
 .btn-two:hover::before {
   transform: rotate(-45deg);
   background-color: rgba(255,255,255,0);
@@ -161,17 +163,32 @@ div[class*=box] {
 
 /*TEXTLINK*/
 .textlink{
-	background-color: #d9d9d9;
-	color: #6b759b;
-	font-family: "Space Mono";
+	background-color: #bd532b;
+	font-family: "Armata";
 	text-align: center;
-	width: 80%;
+	width: 20%;
 	margin: auto;
 	margin-top: 10px;
-	border: 2px dotted #bd532b;
 	font-size: .8em;
+	border: 3px solid #6b759b;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: #bd532b;
+}
+
+a:hover{
+	color: white;
 }
 
 .link{
+	vertical-align: middle;
+}
+
+.arrow {
+	width: 80%;
+	display: inline;
 	vertical-align: middle;
 }
