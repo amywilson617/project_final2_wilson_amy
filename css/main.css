@@ -198,30 +198,14 @@ ul{
 	margin :auto;
 	width: 100%;
 }
-li.a, li.b, li.c{
-	width: 100%;
-}
+
 .details {
     float: left;
     width: 100%;
 }
 
-.details li.a {
-    margin-right: 1%;
-}
-
-.details li.b {
-    margin-left: 1%;
-}
-
-.details li.c {
-    width: 100%;
-    padding: 2em 0;
-		max-height: 200px;
-}
-
-.details li.a, .details li.b {
-    width: 48%;
+.details li.a, .details li.b, details li.c {
+    width: 10%;
     padding-bottom: 40%;
 		vertical-align: middle;
 }
@@ -229,14 +213,13 @@ li.a, li.b, li.c{
 .details li {
     list-style-type: none;
     float: left;
-    overflow: hidden;
-    margin: 0 0 2% 0;
     position: relative;
+		vertical-align: middle;
 }
 
 .details li.a img {
     position: absolute;
-    max-width: 300px;
+    max-width: 600px;
 		vertical-align: middle;
 		width: 100%;
 		margin: auto;
@@ -245,7 +228,15 @@ li.a, li.b, li.c{
 
 .details li.b img {
     position: absolute;
-    max-width: 300px;
+    max-width: 600px;
+		vertical-align: middle;
+		width: 100%;
+		margin: auto;
+}
+
+.details li.c img {
+    position: absolute;
+    max-width: 600px;
 		vertical-align: middle;
 		width: 100%;
 		margin: auto;
@@ -254,4 +245,33 @@ li.a, li.b, li.c{
 img {
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;
+}
+
+/* FLEXBOX GALLERY */
+
+.images {
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+}
+.images div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+.images div img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 300px) {
+  header div { margin: 0; }
+  header { padding: 0; }
 }
