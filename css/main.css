@@ -8,7 +8,7 @@ element.style{
 	border: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, img {
     display: block;
 }
 
@@ -169,14 +169,14 @@ div[class*=box] {
 	width: 20%;
 	margin: auto;
 	margin-top: 10px;
-	font-size: .8em;
+	font-size: 1em;
 	border: 3px solid #6b759b;
 	text-decoration: none;
 }
 
 a{
 	text-decoration: none;
-	color: #bd532b;
+	color: #ddb957;
 }
 
 a:hover{
@@ -191,4 +191,67 @@ a:hover{
 	width: 80%;
 	display: inline;
 	vertical-align: middle;
+}
+
+/*IMAGES*/
+ul{
+	margin :auto;
+	width: 100%;
+}
+li.a, li.b, li.c{
+	width: 100%;
+}
+.details {
+    float: left;
+    width: 100%;
+}
+
+.details li.a {
+    margin-right: 1%;
+}
+
+.details li.b {
+    margin-left: 1%;
+}
+
+.details li.c {
+    width: 100%;
+    padding: 2em 0;
+		max-height: 200px;
+}
+
+.details li.a, .details li.b {
+    width: 48%;
+    padding-bottom: 40%;
+		vertical-align: middle;
+}
+
+.details li {
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    margin: 0 0 2% 0;
+    position: relative;
+}
+
+.details li.a img {
+    position: absolute;
+    max-width: 300px;
+		vertical-align: middle;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+}
+
+.details li.b img {
+    position: absolute;
+    max-width: 300px;
+		vertical-align: middle;
+		width: 100%;
+		margin: auto;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    vertical-align: middle;
 }
