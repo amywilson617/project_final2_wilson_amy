@@ -113,11 +113,12 @@ div[class*=box] {
 }
 
 .btn-two {
-	color: #bd532b;
+	color: #ddb957;
 	transition: all 0.5s;
 	position: relative;
 	font-family: "Armata";
 	margin: 3%;
+	font-size: 1.5em;
 }
 .btn-two span {
 	z-index: 2;
@@ -135,8 +136,8 @@ div[class*=box] {
 	height: 100%;
 	z-index: 1;
 	transition: all 0.5s;
-	border: 1px solid #bd532b;
-	background-color: #ddb957;
+	border: 1px solid #ddb957;
+	background-color: #bd532b;
 }
 
 .btn-two::after {
@@ -176,6 +177,8 @@ div[class*=box] {
 
 a{
 	text-decoration: none;
+	width: 100%;
+	margin: auto;
 	color: #ddb957;
 }
 
@@ -193,65 +196,41 @@ a:hover{
 	vertical-align: middle;
 }
 
-/*IMAGES*/
-ul{
-	margin :auto;
-	width: 100%;
+/* FLEXBOX GALLERY for COLORS */
+
+.colors {
+  padding: .5vw;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: flex;
+	padding-bottom: 10%;
+}
+.colors div {
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto;
+  width: 100px;
+  margin: .5vw;
+	border: 2px solid #d9d9d9
 }
 
-.details {
-    float: left;
-    width: 100%;
+.colors div img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 200px) {
+  header div { margin: 0; }
+  header { padding: 0; }
 }
 
-.details li.a, .details li.b, details li.c {
-    width: 10%;
-    padding-bottom: 40%;
-		vertical-align: middle;
-}
-
-.details li {
-    list-style-type: none;
-    float: left;
-    position: relative;
-		vertical-align: middle;
-}
-
-.details li.a img {
-    position: absolute;
-    max-width: 600px;
-		vertical-align: middle;
-		width: 100%;
-		margin: auto;
-		text-align: center;
-}
-
-.details li.b img {
-    position: absolute;
-    max-width: 600px;
-		vertical-align: middle;
-		width: 100%;
-		margin: auto;
-}
-
-.details li.c img {
-    position: absolute;
-    max-width: 600px;
-		vertical-align: middle;
-		width: 100%;
-		margin: auto;
-}
-
-img {
-    -ms-interpolation-mode: bicubic;
-    vertical-align: middle;
-}
-
-/* FLEXBOX GALLERY */
+/* FLEXBOX GALLERY for IMAGES */
 
 .images {
   padding: .5vw;
-  font-size: 0;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   -ms-flex-direction: column;
@@ -260,11 +239,12 @@ img {
   display: -webkit-box;
   display: flex;
 }
+
 .images div {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
-  width: 200px;
+  width: 160px;
   margin: .5vw;
 }
 .images div img {
