@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 .container{
 	background-color: #ddb957;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: auto;
 }
 
@@ -40,11 +40,12 @@ header {
 }
 
 /* TEXT CONTENT */
+
 .text{
-	margin-top: 0;
-	margin: 3%;
+	margin: 2%;
 	background-color: #d9d9d9;
-	padding: 2%;
+	padding: 1%;
+	p
 }
 
 h2{
@@ -72,8 +73,9 @@ h4{
 }
 
 /*BUTTONS*/
+
 aside{
-	background-color:#d9d9d9;
+	background-color: #d9d9d9;
 	padding: 3%;
 }
 
@@ -84,7 +86,6 @@ aside{
 
 .buttons li {
 	list-style-type: none;
-	test-align: center;
 	width: 40%;
 	max-width: 200px;
 	margin: auto;
@@ -93,7 +94,6 @@ aside{
 }
 
 div[class*=box] {
-	height: 33.33%;
 	width: 100%;
   display: flex;
   justify-content: center;
@@ -109,7 +109,6 @@ div[class*=box] {
 	height: 50px;
 	text-align: center;
 	width: 250px;
-	cursor: pointer;
 }
 
 .btn-two {
@@ -120,6 +119,7 @@ div[class*=box] {
 	margin: 3%;
 	font-size: 1.5em;
 }
+
 .btn-two span {
 	z-index: 2;
 	display: block;
@@ -127,6 +127,7 @@ div[class*=box] {
 	width: 100%;
 	height: 100%;
 }
+
 .btn-two::before {
 	content: '';
 	position: absolute;
@@ -157,6 +158,7 @@ div[class*=box] {
   transform: rotate(-45deg);
   background-color: rgba(255,255,255,0);
 }
+
 .btn-two:hover::after {
   transform: rotate(45deg);
   background-color: rgba(255,255,255,0);
@@ -207,24 +209,21 @@ a:hover{
   flex-flow: row wrap;
   display: -webkit-box;
   display: flex;
-	padding-bottom: 10%;
+	padding-bottom: 4%;
 }
+
 .colors div {
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto;
   width: 100px;
   margin: .5vw;
-	border: 2px solid #d9d9d9
+	border: 2px solid #d9d9d9;
 }
 
 .colors div img {
   width: 100%;
   height: auto;
-}
-@media screen and (max-width: 200px) {
-  header div { margin: 0; }
-  header { padding: 0; }
 }
 
 /* FLEXBOX GALLERY for IMAGES */
@@ -246,12 +245,46 @@ a:hover{
   flex: auto;
   width: 160px;
   margin: .5vw;
+	border: 2px solid #d9d9d9;
 }
+
 .images div img {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 300px) {
-  header div { margin: 0; }
-  header { padding: 0; }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 750px){
+
+	article.text{
+		float: left;
+		width: 40%;
+		clear: none;
+	}
+
+	aside.textlink {
+		clear: both;
+		float: right;
+		width: 10%;
+}
+
+	.colors{
+		clear: both;
+	}
+
+	.as1{
+		clear: both;
+		width: 40%;
+		float: right;
+	}
+
+	div.box-2 {
+		float: right;
+		clear: both ;
+		width: 100%;
+}
+
+	main.container{
+	clear: none;
 }
